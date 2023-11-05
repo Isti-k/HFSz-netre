@@ -1,4 +1,4 @@
 import hf
 
-hf.feladat2()
+hf.feladat5()
     
