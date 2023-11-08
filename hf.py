@@ -74,3 +74,58 @@ def feladat5():
         print(f"Téglalap területe: {terulet:.2f}")
     else:
         print("Hiba: a téglalap oldalai nem pozitívak!")
+
+
+#feladatok:
+#2. feladat.
+
+def szam_szamjegye(szam:int):
+    print("szam: ",szam)
+#hogy kapjuk meg az utlsó számjegyet?
+    while (szam>9):
+        print("következő számjegy", szam%10)
+        szam = szam // 10
+        print("Az aktuális szám ", szam)
+    
+    print("Az utolsó számjegy ", szam)
+
+
+def szam_szamjegye2(szam:int):
+    szoveg_szam:str=str(szam)
+    i=0
+    while i<len(szoveg_szam):
+        print(szoveg_szam [i])
+        i+1
+
+#10.feladat:
+def ermedobas():
+    i:int= 0
+    fhossz:int=0
+    f_szama:int=0
+    max_hossz=0
+    elozo_string_f=False
+    while i<10:
+        jel:str = input("F/I: ")
+        while not ((jel=='F') or (jel=='f') or (jel=="I") or (jel=="i")):
+            jel:str = input("nem jó, F/I-t adj meg! ")
+
+        if (jel == 'f' or jel == 'F'):
+            f_szama+=1
+            fhossz+=1
+            elozo_string_f=True
+        else:
+            print("aktuális hpssz: ", fhossz)
+            elozo_string_f=False
+            fhossz=0
+            #itt összehasonlítjuk az eddigi maxhosszt
+            #az aktuális hosszal
+            if (max_hossz<fhossz):
+                max_hossz=fhossz
+            fhossz=0
+
+        i+=1
+
+    print("F-ek száma:", f_szama)
+    if (max_hossz<fhossz):
+        max_hossz=fhossz
+    fhossz=0
