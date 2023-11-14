@@ -3,4 +3,4 @@ import hf
 
 import gyakorlas
 #gyakorlas.veletlen()
-gyakorlas.feladat4()
+gyakorlas.feladat5("hello")

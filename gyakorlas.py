@@ -79,3 +79,11 @@ def feladat4():
         else:
             print("nem osztható 5-el!!")
         i+=1
+
+#5. feladat:
+def feladat5(szo):
+    print(f"A szöveg hossza: {len(szo)}")
+    if len(szo) >= 5:
+        print(f"Az 5. karakter nagybetűvel: {szo[4].upper()}")
+    else:
+        print("A szöveg rövidebb, mint 5 karakter.")
