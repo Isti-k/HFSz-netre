@@ -73,8 +73,8 @@ def feladat4():
         kivonas: eredmeny - 15
         osztas: kivonas / 6
         szorzas: osztas * 2
-        kivonas2: szorzas - szam
-        if kivonas2 % 5 == 0:
+        Vege: szorzas - szam
+        if Vege % 5 == 0:
             print(szam, end=" ")
         else:
             print("nem osztható 5-el!!")
